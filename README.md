@@ -7,10 +7,10 @@ eficiotech.com
 
 
 
-$npm install devcamp-js-builder -g /n
-$js-generate
-    >react-redux-router
-$npm install
+$npm install devcamp-js-builder -g  
+$js-generate  
+    >react-redux-router  
+$npm install  
 
 >npm package provided by jordanhudgens
 
