@@ -1,9 +1,11 @@
 COMPETENCY TEST FOR NIKOLA MOTORS
 
 
-Ammon Cisneros
+Ammon Cisneros  
 ammon.15.2015.ci@gmail.com  
-eficiotech.com
+eficiotech.com  
+
+
 
 
 
@@ -17,4 +19,4 @@ $npm install
 
 
 
->:^D
+>ᕕ( ᐛ )ᕗ
