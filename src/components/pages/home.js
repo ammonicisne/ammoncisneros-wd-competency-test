@@ -22,17 +22,21 @@ export default function() {
                     </div>
                     <div className="homeLinks">
                         <div className="postHome">
-                            <a href="posts">
-                                <FontAwesomeIcon icon={faNewspaper} />
-                            </a>
+                            <div className="postIcon">
+                                <a href="posts">
+                                    <FontAwesomeIcon icon={faNewspaper} />
+                                </a>
+                            </div>
                             <div className="postHomeDesc">
                                 post stuff
                             </div>
                         </div>
                         <div className="loginHome">
-                            <a href="login">
-                                <FontAwesomeIcon icon={faSignInAlt} />
-                            </a>
+                            <div className="loginIcon">
+                                <a href="login">
+                                    <FontAwesomeIcon icon={faSignInAlt} />
+                                </a>
+                            </div>
                             <div className="loginHomeDesc">
                                 login stuff
                             </div>
