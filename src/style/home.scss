@@ -1,0 +1,88 @@
+.homePage{
+    display: felx;
+    flex-direction: column;
+    .newsBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: auto;
+        height: 400px;
+        transition: 0.5s ease-in-out;
+        border-bottom: 1px solid white;
+        &:hover{
+            height: 550px;
+            transition: 0.5s ease-in-out;
+        }
+    }
+    .emptyBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: #e2e2e2;
+        color: #a5a5a5;
+        font-size: 50px;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    .homeNewsBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 290px;
+        background-color: white;
+        color: #a5a5a5;
+        font-size: 30px;
+        font-family: 'Fjalla One', sans-serif;
+        .homeNewsSubBox{
+            background: transparent;
+            color: #a5a5a5;
+            font-size: 18px;
+        }
+    }
+    .newsBox img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;    
+    }
+    .homeLinks{
+        display: flex;
+        padding-top: 35px;
+        background: transparent;
+    }
+        .postHome{
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            color: #a5a5a5;
+            align-items: center;
+            padding: 10px;
+        }
+        .loginHome{
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            color: #a5a5a5;
+            align-items: center;    
+            padding: 10px;
+        }
+        #faNewspaper{
+            color: red;
+        }
+        .postHomeDesc{
+            background: transparent;
+            color: #a5a5a5;   
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 15px;
+        }
+        .loginHomeDesc{
+            background: transparent;
+            color: #a5a5a5;        
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 15px;
+        }
+
+    }

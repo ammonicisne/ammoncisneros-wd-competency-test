@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router";
 import { NavLink } from "react-router-dom";
 
-import {nikola} from "../../images/nikola.png"
+import nikola from "../../images/nikola.png"
 
 const NavigationComponent = props => {
   const dynamicLink = (route, linkText) => {
@@ -19,21 +19,23 @@ const NavigationComponent = props => {
     <div className="navbar">
       <div className="subNavbar">
         <div className="nav-link-wrapper">
-          <NavLink to="/" activeClassName="nav-link-active">
-            <img src = {nikola}  alt="nikola motor company" />
-          </NavLink>
+          <div className="homeNav">
+            <NavLink to="/">
+              <img src = {nikola}  alt="nikola motor company" />
+            </NavLink>
+          </div>
         </div>
         <div className="nav-link-wrapper">
           <div className="postsNav">        
             <NavLink to="/posts" activeClassName="nav-link-active">
-              Post
+              POST
             </NavLink>
           </div>
         </div>
         <div className="nav-link-wrapper">
           <div className="indexNav">        
             <NavLink to="/index" activeClassName="nav-link-active">
-              Index
+              INDEX
             </NavLink>
           </div>
         </div>

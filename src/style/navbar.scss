@@ -1,4 +1,5 @@
 .navbar{
+    font-weight: 600;
     height: 77px;
     background-color: #00aeef;
     font-size: 14px;
@@ -14,15 +15,56 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            &:hover{
+                cursor: pointer;
+                a{
+                color: #00aeef;
+                }
+            }
+        }
+        .homeNav{
+            width: 192px;
+            height: 77px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+
+        }
+        .homeNav img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;    
+        }
+        .postsNav{
+            width: 82px;
+        }
+        .indexNav{
+            width: 82px;
+        }
+    }
+    .nav-link-wrapper-pro {
+        margin-left:auto;
+        display: flex;
+        background-color: #202020;
+        justify-content: center;
+        align-items: center;
+        width: 115px;
+        &:hover{
+            cursor: pointer;
+            a{
+            color: #00aeef;
+            }
+        }
+    }
+    
+    a{ 
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            color: #00aeef;
+            transition: 0.3s ease-in-out;
         }
     }
 }
-.nav-link-wrapper-pro {
-    margin-left:auto;
-    display: flex;
-    background-color: #202020;
-    justify-content: center;
-    align-items: center;
-}
 
-a{ text-decoration: none;}
