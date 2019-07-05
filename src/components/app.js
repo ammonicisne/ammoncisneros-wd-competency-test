@@ -7,6 +7,16 @@ import ItemContainer from "./pages/posts";
 import Index from "./pages/index";
 import MyProfile from "./pages/login";
 
+//TODO
+//Add id of articles to homepage(first three)
+//Style Index page
+//Add content to Post page
+//Create Login page
+//Create user abilities for following
+  //Vanilla
+  //Editor
+  //Admin
+
 export default class App extends Component {
   render() {
     return (
@@ -16,8 +26,8 @@ export default class App extends Component {
           <NavigationContainer />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/posts" component={ItemContainer} />
-              <Route exact path="/index" component={Index} />
+              <Route exact path="/index" component={ItemContainer} />
+              <Route exact path="/posts" component={Index} />
               <Route exact path="/login" component={MyProfile} />
             </Switch>
           </div>

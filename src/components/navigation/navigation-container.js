@@ -26,16 +26,16 @@ const NavigationComponent = props => {
           </div>
         </div>
         <div className="nav-link-wrapper">
-          <div className="postsNav">        
-            <NavLink to="/posts" activeClassName="nav-link-active">
-              POST
+          <div className="indexNav">        
+            <NavLink to="/index" activeClassName="nav-link-active">
+              INDEX
             </NavLink>
           </div>
         </div>
         <div className="nav-link-wrapper">
-          <div className="indexNav">        
-            <NavLink to="/index" activeClassName="nav-link-active">
-              INDEX
+          <div className="postsNav">        
+            <NavLink to="/posts" activeClassName="nav-link-active">
+              POST
             </NavLink>
           </div>
         </div>

@@ -17,7 +17,7 @@ export default class Item extends Component {
   }
 
   render() {
-    const { id, description, thumb_image_url, logo_url } = this.props.item;
+    const { id, description, url } = this.props.item;
     return (
       <div
         className="item-wrapper"
@@ -25,20 +25,15 @@ export default class Item extends Component {
         onMouseLeave={() => this.handleMouseLeave()}
       >
         <div
-          className={
-            "img-background " + this.state.ItemClass
-          }
-          style={{
-            backgroundImage: "url(" + thumb_image_url + ")"
-          }}
         />
 
         <div className="img-text-wrapper">
           <div className="logo-wrapper">
-            <img src={logo_url} />
           </div>
-
           <div className="subtitle">{description}</div>
+          <a href={url}>
+            <div className="subtitle">{url}</div>
+          </a>
         </div>
       </div>
     );
