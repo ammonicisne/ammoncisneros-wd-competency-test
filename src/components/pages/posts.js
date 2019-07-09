@@ -12,10 +12,10 @@ export default class ItemContainer extends Component {
       data: []
     };
 
-    this.Filter = this.Filter.bind(this);
+    this.filter = this.filter.bind(this);
   }
 
-  Filter(filter) {
+  filter(filter) {
     if (filter === "CLEAR_FILTERS") {
         this.getItems();
       } else {
@@ -45,7 +45,7 @@ export default class ItemContainer extends Component {
   }
 
 
-  Items() {
+  items() {
     return this.state.data.map(item => {
         return <Item key={item.id} item={item} />;
     });
@@ -61,19 +61,20 @@ export default class ItemContainer extends Component {
     }
 
     return (
-        <div className="items-wrapper">
+        <div className="index-items-wrapper">
             <div className="filter-links">
-                <button className="btn" onClick={() => this.Filter("Trucks")}>
-                Latest on our Trucks
+                <button className="btn" onClick={() => this.filter("Trucks")}>
+                LATEST ON OUR TRUCKS
                 </button>
-                <button className="btn" onClick={() => this.Filter("Hydrogen")}>
-                Stay up to date with our Hydrogen
+                <button className="btn" onClick={() => this.filter("Hydrogen")}>
+                STAY UP TO DATE WITH OUR HYDROGEN
                 </button>
-                <button className="btn" onClick={() => this.Filter("PowerSports")}>
-                Latest on our PowerSports
+                <button className="btn" onClick={() => this.filter("PowerSports")}>
+                LATEST ON OUR POWERSPORTS
                 </button>
             </div>
-            <div className="items-wrapper">{this.Items()}</div>
+            <div className="single-items-wrapper">{this.items()}
+            </div>
          </div>
     );
   }

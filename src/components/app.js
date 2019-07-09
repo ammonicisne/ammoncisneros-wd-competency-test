@@ -9,13 +9,9 @@ import MyProfile from "./pages/login";
 
 //TODO
 //Add id of articles to homepage(first three)
-//Style Index page
-//Add content to Post page
 //Create Login page
 //Create user abilities for following
-  //Vanilla
-  //Editor
-  //Admin
+//Fix stupid rerendering memory leak
 
 export default class App extends Component {
   render() {

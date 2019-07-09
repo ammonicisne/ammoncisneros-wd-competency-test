@@ -8,34 +8,21 @@ export default class Item extends Component {
     };
   }
 
-  handleMouseEnter() {
-    this.setState({ ItemClass: "image-blur" });
-  }
-
-  handleMouseLeave() {
-    this.setState({ ItemClass: "" });
-  }
-
   render() {
-    const { id, description, url } = this.props.item;
+    const { description, url, name } = this.props.item;
     return (
-      <div
-        className="item-wrapper"
-        onMouseEnter={() => this.handleMouseEnter()}
-        onMouseLeave={() => this.handleMouseLeave()}
-      >
-        <div
-        />
-
-        <div className="img-text-wrapper">
-          <div className="logo-wrapper">
-          </div>
+        <div className="article-text-wrapper">
+          <div className="subtitle">
+          <div className="subName">{name}</div></div>
           <div className="subtitle">{description}</div>
           <a href={url}>
-            <div className="subtitle">{url}</div>
+            <div className="subtitle">
+              <div className="subUrl">
+                {url}
+              </div>
+            </div>
           </a>
         </div>
-      </div>
     );
   }
 }
