@@ -9,14 +9,14 @@ eficiotech.com
 
 
 
-$npm install devcamp-js-builder -g  
-$js-generate  
+>$npm install devcamp-js-builder -g  
+>$js-generate  
     >react-redux-router  
-$npm install  
+>$npm install  
 
->npm package provided by jordanhudgens
-
-
+npm package provided by jordanhudgens
 
 
->ᕕ( ᐛ )ᕗ
+
+
+ᕕ( ᐛ )ᕗ
